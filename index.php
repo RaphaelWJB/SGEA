@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
     <link rel="stylesheet" href="node_modules/bootstrap/compiler/estilos.css">
-    <title>TCC</title>
+    <title>Teste</title>
     <style>
 
     </style>
