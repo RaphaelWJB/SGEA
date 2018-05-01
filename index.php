@@ -14,9 +14,6 @@
     <style>
     </style>
 
-  
-
-
 </head>
 <body>
 
@@ -186,10 +183,14 @@
                 <input type="text" class="form-control" id="cEmail" placeholder="Email">
             </div>
 
-
+<!--            onkeypress='return event.charCode>= 48 && event.charCode<= 57'-->
             <div class="form-group">
                 <label for="cTelefone" class="mb-1">Telefone</label>
+<<<<<<< HEAD
                 <input type="text" class="form-control" id="cTelefone" placeholder="Telefone" onkeypress='return event.charCode>= 48 && event.charCode<= 57'>
+=======
+                <input type="text" name="tell1" class="form-control" id="cTelefone" placeholder="Telefone" pattern="[0-9]+$">
+>>>>>>> effd1e422af47e660abe6a92eb64a1822d9a81c6
             </div>
 
 
@@ -220,5 +221,13 @@
 <script src="node_modules/popper.js/dist/umd/popper.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
 <script src="node_modules/bootstrap/dist/js/meuScript.js"></script>
+<script src="js/jquery.maskedinput.js"></script>
+
+<script type="text/javascript">
+    
+    $(document).ready(function (){
+        $('#cTelefone').mask('(999) 9 9999-9999')
+    })
+</script>
 </body>
 </html>
