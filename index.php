@@ -7,11 +7,16 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
-    <link rel="stylesheet" href="node_modules/bootstrap/compiler/estilos.css">
-    <title>Teste</title>
-    <style>
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/estilos.css">   
+    	
+    <title>SGEA</title>
 
+    <style>
     </style>
+
+  
+
+
 </head>
 <body>
 
@@ -184,7 +189,7 @@
 
             <div class="form-group">
                 <label for="cTelefone" class="mb-1">Telefone</label>
-                <input type="text" class="form-control" id="cTelefone" placeholder="Telefone">
+                <input type="text" class="form-control" id="cTelefone" placeholder="Telefone" onkeypress='return event.charCode>= 48 && event.charCode<= 57'>
             </div>
 
 

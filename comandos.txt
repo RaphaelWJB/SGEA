@@ -1,7 +1,7 @@
 git init
 git add . (Tira da area do desenvolvimento e adiciona na area de estágio);
 git status (efetua checagem);
-git commit (vai pra pre-estagio final); 
+git commit -m (vai pra pre-estagio final   (-m  = digitar mensagem entre ""   ); 
 git push (envia dados para o repositorio);
 -----
 git pull (pucha os dados do repositorio);
