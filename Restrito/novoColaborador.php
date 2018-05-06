@@ -29,6 +29,7 @@
             <li class="breadcrumb-item">
                 <a href="index.php">Home</a>
             </li>
+            <li class="breadcrumb-item active">Cadastros</li>
             <li class="breadcrumb-item">
                 <a href="listarColaborador.php">Colaborador</a>
             </li>
@@ -178,7 +179,7 @@
                     <div class="form-row mt-4">
                         <div class="form-group col-5">
                             <a href="listarColaborador.php"><input type="button" class="btn btn-secondary" value="Cancelar"></a>
-                            <input type="button" class="btn btn-success" value="Salvar">
+                            <a href="listarColaborador.php"><input type="button" class="btn btn-success" value="Salvar" onclick="alert('Colaborador cadastrado com sucesso!') "></a>
                         </div>
                     </div>
 

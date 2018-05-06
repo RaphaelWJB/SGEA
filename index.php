@@ -188,7 +188,7 @@
 <!--            onkeypress='return event.charCode>= 48 && event.charCode<= 57'-->
             <div class="form-group">
                 <label for="cTelefone" class="mb-1">Telefone</label>
-                <input type="text" name="tell1" class="form-control" id="cTelefone" placeholder="Telefone" pattern="[0-9]+$">
+                <input type="text" name="tell1" class="form-control" id="cTelefone" placeholder="Telefone" pattern="\([0-9]{3}\) [9] [0-9]{4,6}-[0-9]{3,4}$" required>
             </div>
 
 

@@ -32,6 +32,7 @@
             <li class="breadcrumb-item">
                 <a href="index.php">Home</a>
             </li>
+            <li class="breadcrumb-item active">Cadastros</li>
             <li class="breadcrumb-item active">Produtos</li>
         </ol>
         <div class="row">
