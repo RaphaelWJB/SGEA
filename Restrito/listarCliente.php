@@ -56,28 +56,21 @@
                                     <th>CPF</th>
                                     <th>Telefone</th>
                                     <th>Email</th>
+                                    <th>Situação</th>
                                     <th>Ação</th>
                                 </tr>
                                 </thead>
-                                <tfoot>
-                                <tr>
-                                    <th>Nome</th>
-                                    <th>CPF</th>
-                                    <th>Telefone</th>
-                                    <th>Email</th>
-                                    <th>Ação</th>
-                                </tr>
-                                </tfoot>
                                 <tbody>
                                 <tr>
                                     <td>Matheus Viana</td>
                                     <td>789.456.123-58</td>
                                     <td>(061) 9 9585-6985</td>
                                     <td>Matheus@gmail.com</td>
+                                    <td>Ativo</td>
                                     <td>
                                         <a href="#" class="fa fa-list-alt text-secondary"  data-toggle="modal" data-target="#mostrar" title="Detalhes"></a>
-                                        <a href="EditarCliente.php" class="fa fa-edit align-items-center" title="Editar"></a>
-                                        <a href="#" class="fa fa-ban text-danger"  data-toggle="modal" data-target="#excluir" data-placement="top" title="Inativar"></a>
+                                        <a href="editarCliente.php" class="fa fa-edit align-items-center" title="Editar"></a>
+                                        <a href="#" class="fa fa-ban text-danger"  data-toggle="modal" data-target="#modalInativarCliente" data-placement="top" title="Inativar"></a>
                                     </td>
                                 </tr>
                                 </tbody>
@@ -94,37 +87,50 @@
 
 
 <!-- Modal -->
-<!--Excluir fornecedor-->
-<div class="modal fade" id="excluir" tabindex="-1" role="dialog" aria-labelledby="excluir" aria-hidden="true">
+<!--Inativar Cliente-->
+<div class="modal fade" id="modalInativarCliente" tabindex="-1" role="dialog" aria-labelledby="inativarCliente" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel"> Excluir Fornecedor</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+                <h5 class="modal-title"> Confirmação</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
             </div>
             <div class="modal-body">
-                <p>Deseja realmente excluir o fornecedor <strong>COMANDO AUTO-PEÇAS LTDA</strong></p>
+                <p>Deseja realmente inativar o cliente <strong>Matheus Viana</strong>?</p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">NÃO</button>
-                <button type="button" class="btn btn-primary">SIM</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal"onclick="alert('Cliente inativado com sucesso!')">SIM</button>
             </div>
         </div>
     </div>
 </div>
-<!--Detalhar Fornecedor-->
+
+<!--Detalhar Cliente-->
 <div class="modal fade" id="mostrar" tabindex="-1" role="dialog" aria-labelledby="excluir" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel"> Informações do Fornecedor</h5>
+                <h5 class="modal-title" id="exampleModalLabel"> Informações do Cliente</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
+
+                <p>Codigo: 123</p>
+                <p>Nome: Matheus Viana</p>
+                <p>CPF: 789.456.123-58</p>
+                <p>Data de Nascimento: 13/10/1995</p>
+                <p>Telefone: (061) 9 9585-6985</p>
+                <p>Email: Matheus@gmail.com</p>
+                <p>Endereço: nº 24 - Setor 10 - Aguas lindas - GO - 72.154-589</p>
+                <p>Usuario: Matheus.Viana</p>
+                <p>Acesso: Proprietário</p>
+                <p>Situação: Ativo</p>
+                
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Voltar</button>

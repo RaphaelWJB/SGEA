@@ -65,7 +65,7 @@
                         <!--CPF do colaborador-->
                         <div class="form-group col-3 ">
                             <label for="campoCpf">CPF</label>
-                            <input value="789.456.123-58" type="text" class="form-control" id="campoCpf" placeholder="CPF">
+                            <input value="789.456.123-58" type="text" class="form-control" id="campoCpf" placeholder="CPF" disabled>
                         </div>
 
                         <!--Data de Nascimento do colaborador-->
@@ -198,13 +198,13 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Alterar Colaborador</h5>
+                    <h5 class="modal-title">Confirmação</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <p>Deseja realmente alterar o colaborador <strong>Matheus Viana</strong> </p>
+                    <p>Deseja realmente alterar o colaborador <strong>Matheus Viana</strong>?</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Não</button>
