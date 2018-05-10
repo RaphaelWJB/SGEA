@@ -29,6 +29,7 @@
             <li class="breadcrumb-item">
                 <a href="index.php">Home</a>
             </li>
+            <li class="breadcrumb-item active">Cadastros</li>
             <li class="breadcrumb-item">
                 <a href="listarFornecedor.php">Fornecedor</a>
             </li>
@@ -69,7 +70,7 @@
                         <!--CNPJ-->
                         <div class="form-group col-3 ">
                             <label for="campoCnpj">CNPJ</label>
-                            <input type="text" class="form-control" id="campoCnpj" placeholder="CNPJ" value="00000000/0001">
+                            <input type="text" class="form-control" id="campoCnpj" placeholder="CNPJ" value="00000000/0001" disabled>
                         </div>
                         
                         <!--IE - Inscrição Estadual-->
@@ -189,42 +190,29 @@
                         </div>
                     </div>
 
+                </form>
+
+<!--                Modal de confirmação de alteração-->
                     <div class="modal fade" id="alterar" tabindex="-1" role="dialog" aria-labelledby="alterar" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="alterar"> Alterar Fornecedor</h5>
+                                    <h5 class="modal-title" id="alterar"> Confirmação</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <p>Deseja realmente alterar dados do fornecedor</p>
+                                    <p>Deseja realmente alterar o fornecedor <strong>COMANDO AUTO-PEÇAS LTDA</strong>?</p>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">NÃO</button>
-                                    <button type="button" class="btn btn-primary" onclick="alert('Alterado com sucesso')">SIM</button>
+                                    <a href="listarFornecedor.php" onclick="alert('Fornecedor alterado com sucesso!')"><button type="button" class="btn btn-primary">SIM</button></a>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-
-                    <div class="modal fade" id="confirmação" tabindex="-1" role="dialog" aria-labelledby="alterar" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-body">
-                                    <p>Dados alterados com sucesso</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-primary">OK</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-
-
+                
             </div>
         </div>
     </div>

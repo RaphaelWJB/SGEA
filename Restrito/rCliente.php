@@ -79,16 +79,7 @@
                                         <th>Ação</th>
                                     </tr>
                                     </thead>
-                                    <tfoot>
-                                    <tr>
-                                        <th>Nome</th>
-                                        <th>CPF</th>
-                                        <th>Telefone</th>
-                                        <th>Email</th>
-                                        <th>Situação</th>
-                                        <th>Ação</th>
-                                    </tr>
-                                    </tfoot>
+                                
                                     <tbody>
                                     <tr>
                                         <td>Matheus Viana</td>
@@ -108,6 +99,12 @@
                                     <td>
                                         <a href="#" class="fa fa-file-pdf" title="PDF" onclick="imprimir()"></a>
                                     </td>
+
+
+                                    </tfoot>
+                                    <tbody>
+
+
                                     </tbody>
                                 </table>
                             </div>
@@ -186,11 +183,11 @@
 <script src="../js/sb-admin-datatables.min.js"></script>
 
 <script>
-    
+
     function imprimir() {
         print()
     }
-    
+
 </script>
 
 </body>

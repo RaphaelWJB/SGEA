@@ -39,6 +39,7 @@
             <li class="breadcrumb-item">
                 <a href="index.php">Home</a>
             </li>
+            <li class="breadcrumb-item active">Cadastros</li>
             <li class="breadcrumb-item">
                 <a href="listarProdutos.php">Produtos</a>
             </li>
@@ -228,7 +229,7 @@
             <!--            <div class="form-row mt-4">-->
             <div class="form-group col-5">
                 <a href="listarProdutos.php"><input type="button" class="btn btn-secondary" value="Cancelar"></a>
-                <input type="button" class="btn btn-success" value="Salvar">
+                <a href="listarProdutos.php"><input type="button" class="btn btn-success" value="Salvar" onclick="alert('Produto cadastrado com sucesso!')"></a>
             </div>
             <!--            </div>-->
 

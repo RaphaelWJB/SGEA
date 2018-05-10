@@ -32,6 +32,7 @@
             <li class="breadcrumb-item">
                 <a href="index.php">Home</a>
             </li>
+            <li class="breadcrumb-item active">Cadastros</li>
             <li class="breadcrumb-item active">Produtos</li>
         </ol>
         <div class="row">
@@ -77,14 +78,13 @@
                                     <td>
                                         <a href="#" class="fa fa-list-alt text-secondary"  data-toggle="modal" data-target="#mostrar"></a>
                                         <a href="editarProduto.php" class="fa fa-edit align-items-center"></a>
-                                        <a href="#" class="fa fa-trash-alt text-danger"  data-toggle="modal" data-target="#excluir"></a>
+                                        <a href="#" class="fa fa-trash-alt text-danger"  data-toggle="modal" data-target="#modalExcluirProduto"></a>
                                     </td>
                                 </tr>
                                 </tbody>
                             </table>
                         </div>
                     </div>
-                    <!--                    <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>-->
                 </div>
             </div>
         </div>
@@ -94,37 +94,52 @@
 
 
 <!-- Modal -->
-<!--Excluir fornecedor-->
-<div class="modal fade" id="excluir" tabindex="-1" role="dialog" aria-labelledby="excluir" aria-hidden="true">
+<!--Excluir Produto-->
+<div class="modal fade" id="modalExcluirProduto" tabindex="-1" role="dialog" aria-labelledby="excluirProduto" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel"> Excluir Fornecedor</h5>
+                <h5 class="modal-title" id="exampleModalLabel"> Confirmação</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-                <p>Deseja realmente excluir o fornecedor <strong>COMANDO AUTO-PEÇAS LTDA</strong></p>
+                <p>Deseja realmente excluir o produto <strong>Oleo de motor</strong>?</p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">NÃO</button>
-                <button type="button" class="btn btn-primary">SIM</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="alert('Produto excluido com sucesso!')">SIM</button>
             </div>
         </div>
     </div>
 </div>
-<!--Detalhar Fornecedor-->
+
+<!--Detalhar Produtos-->
 <div class="modal fade" id="mostrar" tabindex="-1" role="dialog" aria-labelledby="excluir" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel"> Informações do Fornecedor</h5>
+                <h5 class="modal-title" id="exampleModalLabel"> Informações do Produto</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
+                
+                <p>Codigo: 1</p>
+                <p>Nome do produto: Oleo de motor</p>
+                <p>Marca do produto: Grid</p>
+                <p>Descrição do produto: Oleo de motor - Grid carros tal</p>
+                <p>Qtde. p/ alerta: 25</p>
+                <p>Qtde. Estoque: 220</p>
+                <p>Tipo: LT</p>
+                <p>Categoria: Perecivel</p>
+                <p>Data de Vencimento: 	25/07/2018</p>
+                <p>Fornecedor: Comando</p>
+                <p>Valor de Compra: 12</p>
+                <p>Valor de Venda: 18</p>
+                
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Voltar</button>

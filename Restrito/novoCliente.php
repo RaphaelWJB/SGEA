@@ -135,9 +135,18 @@
                         </div>
 
                         <!--Complemento-->
-                        <div class="form-group col-6">
+                        <div class="form-group col-3">
                             <label for="campoComplemento">Complemento</label>
                             <input type="text" class="form-control" id="campoComplemento" placeholder="Complemento">
+                        </div>
+
+                        <!--Situação-->
+                        <div class="form-group col-3">
+                            <label for="campoSituacao">Situação</label>
+                            <select id="campoSituacao" class="form-control">
+                                <option selected>Ativo</option>
+                                <option>Inativo</option>
+                            </select>
                         </div>
                     </div>
 
@@ -146,7 +155,7 @@
                     <div class="form-row mt-4">
                         <div class="form-group col-5">
                             <a href="listarCliente.php"><input type="button" class="btn btn-secondary" value="Cancelar"></a>
-                            <input type="button" class="btn btn-success" value="Salvar">
+                            <a href="listarCliente.php"><input type="button" class="btn btn-success" value="Salvar" onclick="alert('Cliente cadastrado com sucesso!')"></a>
                         </div>
                     </div>
 

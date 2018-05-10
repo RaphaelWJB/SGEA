@@ -39,6 +39,7 @@
             <li class="breadcrumb-item">
                 <a href="index.php">Home</a>
             </li>
+            <li class="breadcrumb-item active">Cadastros</li>
             <li class="breadcrumb-item">
                 <a href="listarProdutos.php">Produtos</a>
             </li>
@@ -157,24 +158,41 @@
                             <input type="text" class="form-control" id="campoNumero" placeholder="Valor de Venda" value="18">
                         </div>
                     </div>
-
             </div>
-
         </div>
-
-        <!--            <div class="form-row mt-4">-->
         <div class="form-group">
             <a href="listarProdutos.php"><input type="button" class="btn btn-secondary" value="Cancelar"></a>
-            <input type="button" class="btn btn-success" value="Salvar">
+            <input type="button" class="btn btn-success" value="Salvar" data-toggle="modal" data-target="#alterar">
         </div>
-        <!--            </div>-->
-
         </form>
 
     </div>
 </div>
 <!-- /.container-fluid-->
 <!-- /.content-wrapper-->
+
+
+<!--                Modal de confirmação de alteração-->
+<div class="modal fade" id="alterar" tabindex="-1" role="dialog" aria-labelledby="alterar" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="alterar"> Confirmação</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Deseja realmente alterar o produto <strong>Oleo de motor</strong>?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">NÃO</button>
+                <a href="listarProdutos.php" onclick="alert('Produto alterado com sucesso!')"><button type="button" class="btn btn-primary">SIM</button></a>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <?php
     require_once "footer.php";

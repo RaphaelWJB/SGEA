@@ -136,9 +136,18 @@
                         </div>
 
                         <!--Complemento-->
-                        <div class="form-group col-6">
+                        <div class="form-group col-3">
                             <label for="campoComplemento">Complemento</label>
                             <input value="" type="text" class="form-control" id="campoComplemento" placeholder="Complemento">
+                        </div>
+
+                        <!--Situação-->
+                        <div class="form-group col-3">
+                            <label for="campoSituacao">Situação</label>
+                            <select id="campoSituacao" class="form-control">
+                                <option selected>Ativo</option>
+                                <option>Inativo</option>
+                            </select>
                         </div>
                     </div>
 
@@ -146,7 +155,7 @@
                     <div class="form-row mt-4">
                         <div class="form-group col-5">
                             <a href="listarCliente.php"><input type="button" class="btn btn-secondary" value="Cancelar"></a>
-                            <input type="button" class="btn btn-success" value="Salvar">
+                            <input type="button" class="btn btn-success" value="Salvar" data-toggle="modal" data-target=".modal-confirmar-alteracao">
                         </div>
                     </div>
 
@@ -157,6 +166,27 @@
     </div>
     <!-- /.container-fluid-->
     <!-- /.content-wrapper-->
+
+    <!--    Modais-->
+    <div class="modal fade modal-confirmar-alteracao" tabindex="1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Confirmação</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Deseja realmente alterar o cliente <strong>Matheus Viana</strong>?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Não</button>
+                    <a href="listarCliente.php" onclick="alert('Cliente alterado com sucesso!')" ><button type="button" class="btn btn-primary">Sim</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
     
     <?php
         require_once "footer.php";
