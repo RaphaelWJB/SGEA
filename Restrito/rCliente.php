@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -61,9 +61,6 @@
                     <!--</div>-->
 
                     <div class="card mb-5">
-                        <div>
-                            <button type="submit" class="btn btn-success" onclick="imprimir()"><i class="fa fa-print"></i> Imprimir</button>
-                        </div>
 
                         <div class="card-body">
                             <div class="table-responsive">
@@ -114,6 +111,10 @@
                         </div>
                         <!--                    <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>-->
                     </div>
+                        <div>
+                            <button type="submit" class="btn btn-success" onclick="imprimir()"><i class="fa fa-print"></i> Imprimir</button>
+                        </div>
+
                 </form>
             </div>
         </div>

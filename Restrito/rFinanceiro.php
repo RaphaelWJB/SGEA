@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -61,10 +61,7 @@
                     <!--</div>-->
 
                     <div class="card mb-5">
-                        <div>
-                            <button type="submit" class="btn btn-success" onclick="imprimir()"><i class="fa fa-print"></i> Imprimir</button>
-                        </div>
-
+                        
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
@@ -101,7 +98,14 @@
                             <label for="inputNomeFantasia">Total de vendas</label>
                             <input type="text" disabled class="form-control" id="inputNomeFantasia" placeholder="Qtde. p/ alerta" value="450,00">
                         </div>
+			
+			
                     </div>
+			<div>
+                            <button type="submit" class="btn btn-success" onclick="imprimir()"><i class="fa fa-print"></i> Imprimir</button>
+                        </div>
+			
+
                 </form>
             </div>
         </div>
