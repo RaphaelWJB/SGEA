@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0d95d33-0d3d-431d-9020-820bf14165a6" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/Restrito/listarContas.php" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Restrito/EditarCliente.php" afterPath="$PROJECT_DIR$/Restrito/editarCliente.php" />
-      <change beforePath="$PROJECT_DIR$/Restrito/editarColaborador.php" afterPath="$PROJECT_DIR$/Restrito/editarColaborador.php" />
-      <change beforePath="$PROJECT_DIR$/Restrito/editarFornecedor.php" afterPath="$PROJECT_DIR$/Restrito/editarFornecedor.php" />
-      <change beforePath="$PROJECT_DIR$/Restrito/editarProduto.php" afterPath="$PROJECT_DIR$/Restrito/editarProduto.php" />
-      <change beforePath="$PROJECT_DIR$/Restrito/listarCliente.php" afterPath="$PROJECT_DIR$/Restrito/listarCliente.php" />
-      <change beforePath="$PROJECT_DIR$/Restrito/listarColaborador.php" afterPath="$PROJECT_DIR$/Restrito/listarColaborador.php" />
-      <change beforePath="$PROJECT_DIR$/Restrito/listarFornecedor.php" afterPath="$PROJECT_DIR$/Restrito/listarFornecedor.php" />
-      <change beforePath="$PROJECT_DIR$/Restrito/listarProdutos.php" afterPath="$PROJECT_DIR$/Restrito/listarProdutos.php" />
-      <change beforePath="$PROJECT_DIR$/Restrito/novoCliente.php" afterPath="$PROJECT_DIR$/Restrito/novoCliente.php" />
-      <change beforePath="$PROJECT_DIR$/Restrito/novoProduto.php" afterPath="$PROJECT_DIR$/Restrito/novoProduto.php" />
+      <change beforePath="$PROJECT_DIR$/Restrito/menu.php" afterPath="$PROJECT_DIR$/Restrito/menu.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,38 +14,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="listarProdutos.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Restrito/listarProdutos.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-223">
-              <caret line="122" column="86" lean-forward="false" selection-start-line="122" selection-start-column="86" selection-end-line="122" selection-end-column="86" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="listarFornecedor.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Restrito/listarFornecedor.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="117" column="6" lean-forward="true" selection-start-line="98" selection-start-column="0" selection-end-line="117" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="listarCliente.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Restrito/listarCliente.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="125" column="49" lean-forward="false" selection-start-line="125" selection-start-column="39" selection-end-line="125" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>fornecedor</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -74,6 +40,8 @@
         <option value="$PROJECT_DIR$/Restrito/novoProduto.php" />
         <option value="$PROJECT_DIR$/Restrito/editarProduto.php" />
         <option value="$PROJECT_DIR$/Restrito/listarProdutos.php" />
+        <option value="$PROJECT_DIR$/Restrito/menu.php" />
+        <option value="$PROJECT_DIR$/Restrito/listarContas.php" />
       </list>
     </option>
   </component>
@@ -140,6 +108,12 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Projetos\projeto_sgea_git\Restrito" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -168,17 +142,19 @@
       <updated>1525570255525</updated>
       <workItem from="1525570260558" duration="6754000" />
       <workItem from="1525652532915" duration="5955000" />
+      <workItem from="1526596690623" duration="91000" />
+      <workItem from="1526684367411" duration="1867000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12709000" />
+    <option name="totallyTimeSpent" value="14667000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -209,6 +185,28 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Restrito/listarProdutos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Restrito/listarFornecedor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1989">
+          <caret line="117" column="6" lean-forward="true" selection-start-line="98" selection-start-column="0" selection-end-line="117" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Restrito/listarCliente.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2125">
+          <caret line="125" column="49" lean-forward="false" selection-start-line="125" selection-start-column="39" selection-end-line="125" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Restrito/novoFornecedor.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="335">
@@ -220,7 +218,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="236">
           <caret line="183" column="149" lean-forward="true" selection-start-line="183" selection-start-column="28" selection-end-line="183" selection-end-column="149" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -228,7 +225,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1281">
           <caret line="124" column="14" lean-forward="true" selection-start-line="124" selection-start-column="14" selection-end-line="133" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -236,7 +232,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="166" column="24" lean-forward="true" selection-start-line="166" selection-start-column="24" selection-end-line="173" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -244,7 +239,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="138" column="52" lean-forward="false" selection-start-line="138" selection-start-column="52" selection-end-line="138" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -252,7 +246,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3621">
           <caret line="231" column="121" lean-forward="true" selection-start-line="231" selection-start-column="121" selection-end-line="231" selection-end-column="152" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -260,7 +253,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="32" selection-end-column="61" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -268,7 +260,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="188" column="131" lean-forward="true" selection-start-line="188" selection-start-column="28" selection-end-line="188" selection-end-column="131" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -276,30 +267,43 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="267">
           <caret line="189" column="39" lean-forward="false" selection-start-line="189" selection-start-column="39" selection-end-line="189" selection-end-column="39" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Restrito/listarProdutos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="122" column="86" lean-forward="false" selection-start-line="122" selection-start-column="86" selection-end-line="122" selection-end-column="86" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Restrito/listarFornecedor.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="117" column="6" lean-forward="true" selection-start-line="98" selection-start-column="0" selection-end-line="117" selection-end-column="6" />
+        <state relative-caret-position="17">
+          <caret line="117" column="6" lean-forward="false" selection-start-line="98" selection-start-column="0" selection-end-line="117" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Restrito/listarCliente.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
+        <state relative-caret-position="17">
           <caret line="125" column="49" lean-forward="false" selection-start-line="125" selection-start-column="39" selection-end-line="125" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Restrito/listarContas.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="45" column="26" lean-forward="true" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Restrito/listarProdutos.php">
+    <entry file="file://$PROJECT_DIR$/Restrito/menu.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-223">
-          <caret line="122" column="86" lean-forward="false" selection-start-line="122" selection-start-column="86" selection-end-line="122" selection-end-column="86" />
+        <state relative-caret-position="1">
+          <caret line="86" column="58" lean-forward="false" selection-start-line="86" selection-start-column="58" selection-end-line="86" selection-end-column="58" />
           <folding />
         </state>
       </provider>

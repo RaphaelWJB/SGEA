@@ -10,6 +10,7 @@
     <!-- Custom fonts for this template-->
     <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="../vendor/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css"type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <!-- Custom styles for this template-->
     <link href="../css/sb-admin.css" rel="stylesheet">
 </head>
@@ -79,6 +80,13 @@
                 <a class="nav-link" href="efetuarVenda.php">
                     <i class="fa fa-fw fa-shopping-cart"></i>
                     <span class="nav-link-text">Vendas</span>
+                </a>
+            </li>
+
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Vendas">
+                <a class="nav-link" href="listarContas.php">
+                    <i class="fas fa-money-check-alt"></i>
+                    <span class="nav-link-text">Lançar Faturas</span>
                 </a>
             </li>
             
