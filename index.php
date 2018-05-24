@@ -186,15 +186,10 @@
 <!--            onkeypress='return event.charCode>= 48 && event.charCode<= 57'-->
             <div class="form-group">
                 <label for="cTelefone" class="mb-1">Telefone</label>
-<<<<<<< HEAD
-<<<<<<< HEAD
-                <input type="text" class="form-control" id="cTelefone" placeholder="Telefone" onkeypress='return event.charCode>= 48 && event.charCode<= 57'>
-=======
-                <input type="text" name="tell1" class="form-control" id="cTelefone" placeholder="Telefone" pattern="[0-9]+$">
->>>>>>> effd1e422af47e660abe6a92eb64a1822d9a81c6
-=======
+
+                
                 <input type="text" name="tell1" class="form-control" id="cTelefone" placeholder="Telefone" pattern="\([0-9]{3}\) [9] [0-9]{4,6}-[0-9]{3,4}$" required>
->>>>>>> a58375b78a71213927a5e0d7732fbe18a1cee488
+
             </div>
 
 

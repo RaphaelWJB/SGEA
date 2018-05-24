@@ -72,7 +72,7 @@
                                     <td>Grid</td>
                                     <td>220</td>
                                     <td>LT</td>
-                                    <td>Perecivel</td>
+                                    <td>Estragável</td>
                                     <td>25/07/2018</td>
                                     <td>Comando</td>
                                     <td>
@@ -126,7 +126,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                
+
                 <p>Codigo: 1</p>
                 <p>Nome do produto: Oleo de motor</p>
                 <p>Marca do produto: Grid</p>
@@ -139,7 +139,7 @@
                 <p>Fornecedor: Comando</p>
                 <p>Valor de Compra: 12</p>
                 <p>Valor de Venda: 18</p>
-                
+
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Voltar</button>

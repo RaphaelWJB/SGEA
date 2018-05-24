@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>SGEA - Colaborador</title>
+    <title>SGEA - Fornecedor</title>
     <!-- Bootstrap core CSS-->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom fonts for this template-->
@@ -32,19 +32,19 @@
             <li class="breadcrumb-item">
                 <a href="index.php">Home</a>
             </li>
+            <li class="breadcrumb-item active">Lançar Faturas</li>
 
-            <li class="breadcrumb-item active">Cadastros</li>
-            <li class="breadcrumb-item active">Colaborador</li>
         </ol>
         <div class="row">
             <div class="col-12">
-                <h1>Colaborador</h1>
+                <h1>Faturas</h1>
 
 
                 <div class="card mb-3">
                     <div class="card-header">
-                        <i class="fa fa-users"></i> Colaborador
-                        <a href="novoColaborador.php"><button class="btn btn-success float-right col-1">NOVO</button></a>
+                        <!-- <i class="fas fa-money-check-alt"></i> Faturas -->
+                        <i class="fas fa-receipt"></i> Faturas
+                        <a href="novaFatura.php"><button class="btn btn-success float-right">NOVO</button></a>
                     </div>
 
                     <div class="card-body">
@@ -52,27 +52,35 @@
                             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                 <thead>
                                 <tr>
-                                    <th>Nome</th>
-                                    <th>CPF</th>
-                                    <th>Telefone</th>
-                                    <th>Email</th>
-                                    <th>Acesso</th>
-                                    <th>Situação</th>
-                                    <th>&nbsp;Ação</th>
+                                    <th>Empresa devedora</th>
+<!--                                    <th>CNPJ</th>-->
+                                    <th>Data de vencimento</th>
+                                    <th>Pagamento</th>
+                                    <th>Divida Total</th>
+                                    <th>Ação</th>
                                 </tr>
                                 </thead>
+                                <tfoot>
+                                <tr>
+                                    <th>Empresa devedora</th>
+<!--                                    <th>CNPJ</th>-->
+                                    <th>Data de vencimento</th>
+                                    <th>Pagamento</th>
+                                    <th>Divida total</th>
+                                    <th>Ação</th>
+                                </tr>
+                                </tfoot>
                                 <tbody>
                                 <tr>
-                                    <td>Matheus Viana</td>
-                                    <td>789.456.123-58</td>
-                                    <td>(061) 9 9585-6985</td>
-                                    <td>Matheus@gmail.com</td>
-                                    <td>Pai Soberano</td>
-                                    <td>Ativo</td>
+                                    <td>COMANDO AUTO-PEÇAS LTDA</td>
+<!--                                    <td>00000000/0001</td>-->
+                                    <td>25/10/2018</td>
+                                    <td>Catão de credito</td>
+                                    <td>$974.55 5x</td>
                                     <td>
-                                        <a href="#" class="fa fa-list-alt text-secondary"  data-toggle="modal" data-target="#mostrar" title="Detalhes"></a>
-                                        <a href="editarColaborador.php" class="fa fa-edit align-items-center" title="Editar"></a>
-                                        <a href="#" class="fa fa-ban text-danger"  data-toggle="modal" data-target="#modalInativarColaborador" data-placement="top" title="Inativar"></a>
+                                        <a href="#" class="fa fa-list-alt text-secondary"  data-toggle="modal" data-target="#modalDetalharFornecerdor" title="Detalhar"></a>
+                                        <a href="editarFornecedor.php" class="fa fa-edit align-items-center" title="Alterar"></a>
+                                        <a href="#" class="fa fa-trash-alt text-danger"  data-toggle="modal" data-target="#modalExcluirFornecerdor" title="Excluir"></a>
                                     </td>
                                 </tr>
                                 </tbody>
@@ -89,29 +97,29 @@
 
 
 <!-- Modal -->
-<!--Inativar Colaborador-->
-<div class="modal fade" id="modalInativarColaborador" tabindex="-1" role="dialog" aria-labelledby="inativarColaborador" aria-hidden="true">
+<!--Excluir fornecedor-->
+<div class="modal fade" id="modalExcluirFornecerdor" tabindex="-1" role="dialog" aria-labelledby="excluirFornecerdor" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title"> Confirmação</h5>
+                <h5 class="modal-title" id="exampleModalLabel"> Confirmação</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-                <p>Deseja realmente inativar o colaborador <strong>Matheus Viana</strong>?</p>
+                <p>Deseja realmente excluir o fornecedor <strong>COMANDO AUTO-PEÇAS LTDA</strong>?</p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">NÃO</button>
-                <button type="button" class="btn btn-primary" data-dismiss="modal"onclick="alert('Colaborador inativado com sucesso!')">SIM</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="alert('Fornecedor excluido com sucesso!')">SIM</button>
             </div>
         </div>
     </div>
 </div>
 
 <!--Detalhar Fornecedor-->
-<div class="modal fade" id="mostrar" tabindex="-1" role="dialog" aria-labelledby="excluir" aria-hidden="true">
+<div class="modal fade" id="modalDetalharFornecerdor" tabindex="-1" role="dialog" aria-labelledby="detalharFornecedor" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -121,17 +129,26 @@
                 </button>
             </div>
             <div class="modal-body">
-
-                <p>Codigo: 123</p>
-                <p>Nome: Matheus Viana</p>
-                <p>CPF: 789.456.123-58</p>
-                <p>Data de Nascimento: 13/10/1995</p>
-                <p>Telefone: (061) 9 9585-6985</p>
-                <p>Email: Matheus@gmail.com</p>
-                <p>Endereço: nº 24 - Setor 10 - Aguas lindas - GO - 72.154-589</p>
-                <p>Usuario: Matheus.Viana</p>
-                <p>Acesso: Proprietário</p>
-                <p>Situação: Ativo</p>
+                <h5>Dados da empresa</h5>
+                    <div class="ml-2">
+                        <p>Codigo: 123</p>
+                        <p>Razão Social: COMANDO AUTO-PEÇAS LTDA</p>
+                        <p>Nome Fantasia: COMANDO AUTO-PEÇAS</p>
+                        <p>CNPJ: 00000000/0001</p>
+                        <p>Inscrição Estadual: 545644981132</p>
+                        <p>Ramo de Atuação: PEÇAS AUTOMOTIVAS</p>
+                        <p>Telefone: (61) 3333-3333</p>
+                        <p>Email: COMANDOAUTOPECAS@COMANDO.COM</p>
+                        <p>Endereço: Nº 25 - CEILANDIA - BRASILIA-DF - 77.852-258 - EDIFIO TESTE-4º ANDAR</p>
+                        <hr>
+                    </div>
+                <h5>Dados do representante</h5>
+                    <div class="ml-2">
+                        <p>Nome do Representante: JOAQUIM SANTOS</p>
+                        <p>Celular: (061) 9 8595-8965</p>
+                        <p>Função: GERENTE</p>
+                        <p>Email: JOAQUIM@COMANDO.COM</p>
+                    </div>
 
             </div>
             <div class="modal-footer">

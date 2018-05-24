@@ -10,6 +10,7 @@
     <!-- Custom fonts for this template-->
     <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="../vendor/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css"type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <!-- Custom styles for this template-->
     <link href="../css/sb-admin.css" rel="stylesheet">
 </head>
@@ -22,7 +23,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
-        
+
 <!--Dashboard            -->
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Home">
                 <a class="nav-link" href="index.php">
@@ -71,8 +72,8 @@
                     </li>
                 </ul>
             </li>
- 
-            
+
+
 <!--Venda-->
 
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Vendas">
@@ -81,7 +82,14 @@
                     <span class="nav-link-text">Vendas</span>
                 </a>
             </li>
-            
+
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Vendas">
+                <a class="nav-link" href="listarFaturas.php">
+                    <i class="fas fa-money-check-alt"></i>
+                    <span class="nav-link-text">Lançar Faturas</span>
+                </a>
+            </li>
+
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Gráficos">
                 <a class="nav-link" href="graficos.php">
                     <i class="fa fa-fw fa-area-chart"></i>
@@ -130,11 +138,11 @@
                     </li>
                 </ul>
             </li>
-            
-            
-           
+
+
+
         </ul>
-        
+
         <ul class="navbar-nav ml-auto">
 
 
@@ -172,7 +180,7 @@
                     <a class="dropdown-item small" href="#">View all messages</a>
                 </div>
             </li>
-            
+
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle mr-lg-2" id="alertsDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <i class="fa fa-fw fa-bell"></i>
@@ -216,9 +224,9 @@
                     <a class="dropdown-item small" href="#">View all alerts</a>
                 </div>
             </li>
-            
-            
-            
+
+
+
             <li class="nav-item">
                     <div class="input-group mt-2 mr-4">
                         <label class="text-light user">USUARIO: RAPHAEL WILKER DE JESUS BRAGA</label>
