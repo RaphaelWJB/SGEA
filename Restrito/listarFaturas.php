@@ -79,7 +79,7 @@
                                     <td>$974.55 5x</td>
                                     <td>
                                         <a href="#" class="fa fa-list-alt text-secondary"  data-toggle="modal" data-target="#modalDetalharFornecerdor" title="Detalhar"></a>
-                                        <a href="editarFornecedor.php" class="fa fa-edit align-items-center" title="Alterar"></a>
+                                        <a href="EditarFatura.php" class="fa fa-edit align-items-center" title="Alterar"></a>
                                         <a href="#" class="fa fa-trash-alt text-danger"  data-toggle="modal" data-target="#modalExcluirFornecerdor" title="Excluir"></a>
                                     </td>
                                 </tr>

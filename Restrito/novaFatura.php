@@ -31,7 +31,7 @@
             </li>
             <li class="breadcrumb-item active">Lançar Faturas</li>
             <li class="breadcrumb-item">
-                <a href="listarFornecedor.php">Nova Fatura</a>
+                <a href="listarFaturas.php">Nova Fatura</a>
             </li></ol>
 
         <div class="row">
