@@ -16,6 +16,14 @@
     <link href="../vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
     <!-- Custom styles for this template-->
     <link href="../css/sb-admin.css" rel="stylesheet">
+
+    <style>
+        
+        table th{
+            width: 20px;
+        }
+        
+    </style>
 </head>
 
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
@@ -43,8 +51,8 @@
                 <div class="card mb-3">
                     <div class="card-header">
                         <!-- <i class="fas fa-money-check-alt"></i> Faturas -->
-                        <i class="fas fa-receipt"></i> Faturas
-                        <a href="novaFatura.php"><button class="btn btn-success float-right">NOVO</button></a>
+                        <i class="fas fa-money-check-alt"></i> Faturas
+                        <a href="novaFatura.php"><button class="btn btn-success float-right">NOVA</button></a>
                     </div>
 
                     <div class="card-body">
@@ -52,35 +60,27 @@
                             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                 <thead>
                                 <tr>
+                                    <th style="width: 10px;">Codigo da Fatura</th>
                                     <th>Empresa devedora</th>
-<!--                                    <th>CNPJ</th>-->
                                     <th>Data de vencimento</th>
-                                    <th>Pagamento</th>
-                                    <th>Divida Total</th>
+                                    <th>Dias p/ alerta</th>
+                                    <th>Descrição</th>
+                                    <th>Valor da fatura</th>
                                     <th>Ação</th>
                                 </tr>
                                 </thead>
-                                <tfoot>
-                                <tr>
-                                    <th>Empresa devedora</th>
-<!--                                    <th>CNPJ</th>-->
-                                    <th>Data de vencimento</th>
-                                    <th>Pagamento</th>
-                                    <th>Divida total</th>
-                                    <th>Ação</th>
-                                </tr>
-                                </tfoot>
                                 <tbody>
                                 <tr>
+                                    <td>1</td>
                                     <td>COMANDO AUTO-PEÇAS LTDA</td>
-<!--                                    <td>00000000/0001</td>-->
                                     <td>25/10/2018</td>
-                                    <td>Catão de credito</td>
-                                    <td>$974.55 5x</td>
-                                    <td>
-                                        <a href="#" class="fa fa-list-alt text-secondary"  data-toggle="modal" data-target="#modalDetalharFornecerdor" title="Detalhar"></a>
-                                        <a href="EditarFatura.php" class="fa fa-edit align-items-center" title="Alterar"></a>
-                                        <a href="#" class="fa fa-trash-alt text-danger"  data-toggle="modal" data-target="#modalExcluirFornecerdor" title="Excluir"></a>
+                                    <td>15</td>
+                                    <td style="width: 20px;">Fatura referente aos escapamentos da Volkswagen.</td>
+                                    <td>789,89</td>
+                                    <td style="width: 60px;">
+<!--                                        <a href="#" class="fa fa-list-alt text-secondary"  data-toggle="modal" data-target="#modalDetalharFornecerdor" title="Detalhar"></a>-->
+                                        <a href="editarFatura.php" class="fa fa-edit align-items-center" title="Alterar"></a>
+                                        <a href="#" class="fa fa-trash-alt text-danger"  data-toggle="modal" data-target="#modalExcluirFatura" title="Excluir"></a>
                                     </td>
                                 </tr>
                                 </tbody>
@@ -97,22 +97,22 @@
 
 
 <!-- Modal -->
-<!--Excluir fornecedor-->
-<div class="modal fade" id="modalExcluirFornecerdor" tabindex="-1" role="dialog" aria-labelledby="excluirFornecerdor" aria-hidden="true">
+<!--Excluir Fatura-->
+<div class="modal fade" id="modalExcluirFatura" tabindex="-1" role="dialog" aria-labelledby="excluirfatura" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel"> Confirmação</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Confirmação</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-                <p>Deseja realmente excluir o fornecedor <strong>COMANDO AUTO-PEÇAS LTDA</strong>?</p>
+                <p>Deseja realmente excluir a fatura?</p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">NÃO</button>
-                <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="alert('Fornecedor excluido com sucesso!')">SIM</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="alert('Fatura excluido com sucesso!')">SIM</button>
             </div>
         </div>
     </div>

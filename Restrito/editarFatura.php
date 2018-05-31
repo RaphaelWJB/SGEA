@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>SGEA - Nova Fatura</title>
+    <title>SGEA - Editar Fatura</title>
     <!-- Bootstrap core CSS-->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom fonts for this template-->
@@ -31,12 +31,12 @@
             </li>
             <li class="breadcrumb-item active">
                 <a href="listarFaturas.php">Lançar Faturas</li></a>
-            <li class="breadcrumb-item">Cadastrar</li>
+            <li class="breadcrumb-item">Editar</li>
         </ol>
 
         <div class="row">
             <div class="col-12">
-                <h1 class="mb-4">Nova Fatura</h1>
+                <h1 class="mb-4">Alterar Fatura</h1>
                 <form>
                     <!--Codigo da fatura-->
                     <div class="form-row">
@@ -52,27 +52,27 @@
                         <!--Empresa Devedora-->
                         <div class="form-group col-4 ">
                             <label for="campoEmpresaDevedora">Empresa Devedora</label>
-                            <input type="text" class="form-control" id="campoEmpresaDevedora" placeholder="Empresa Devedora">
+                            <input type="text" class="form-control" id="campoEmpresaDevedora" value="COMANDO AUTO-PEÇAS LTDA">
                         </div>
 
                         <!--Data de vencimento-->
                         <div class="form-group col-2">
                             <label for="campoDtaVenc">Data Vencimento</label>
-                            <input type="text" class="form-control" id="campoDtaVenc" placeholder="dd/mm/aaaa">
+                            <input type="text" class="form-control" id="campoDtaVenc" value="25/10/2018">
                         </div>
 
                         <!--Dias para alertas-->
                         <div class="form-group col-2 ">
                             <label for="campoDtaVenc">Dias p/ alerta</label>
-                            <input type="text" class="form-control" id="campoDtaVenc" placeholder="Dias p/ alerta">
+                            <input type="text" class="form-control" id="campoDtaVenc" value="15">
                         </div>
                     </div>
-                    
+
                     <div class="form-row">
                         <!--Descrição da fatura-->
                         <div class="form-group col-6">
                             <label for="campoDescFatura">Descrição da fatura</label>
-                            <textarea name="" id="campoDescFatura" cols="" rows="5" class="form-control" style="resize: none" placeholder="Descrição da fatura"></textarea>
+                            <textarea name="" id="campoDescFatura" cols="" rows="5" class="form-control" style="resize: none">Fatura referente aos escapamentos da Volkswagen.</textarea>
                         </div>
                     </div>
 
@@ -81,17 +81,17 @@
                         <!--Valor da Fatura-->
                         <div class="form-group col-3">
                             <label for="campoValorFatura">Valor da Fatura</label>
-                            <input type="text" class="form-control" id="campoValorFatura" placeholder="Valor da Fatura">
+                            <input type="text" class="form-control" id="campoValorFatura" value="789,89">
                         </div>
                     </div>
 
                     <div class="form-row">
                         <div class="form-group col-5">
                             <a href="listarFaturas.php"><input type="button" class="btn btn-secondary" value="Cancelar"></a>
-                            <a href="listarFaturas.php"><input type="button" class="btn btn-success" value="Salvar" onclick="alert('Fatura cadastrada com sucesso!')"></a>
+                            <a href="listarFaturas.php"><input type="button" class="btn btn-success" value="Salvar" onclick="alert('Fatura alterada com sucesso!')"></a>
                         </div>
                     </div>
-                    
+
                 </form>
 
 
